@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="shortcut icon" type="image/png" href="../images/icon.png">
+        <script>
+            var username, first_name, last_name, password, gender, address, email, mobile_number, profile_picture ,token;
+            token = sessionStorage.getItem("token");
+        </script>
+    </head>
+<body class=" bodyTag" onload="loadProfile()">
+        <div w3-include-html="top-navigation.html" class="navBar"></div>
+        <div class="container">
+          <br>
+          <h1 style="font-weight: bold;">My Profile</h1>
+            <div class="row">
+              <img id="target" style="height: 90px; width: 90px; border-radius: 50%; ">
+              <h3 id="p-username" class="text-center"></h3>   
+            </div>
+            <form class="row g-3" name="myForm" >
+              <br>
+              <div class="col-md-3">
+              <br>
+                <input type="file" onchange="encode()" id="p-file" class="button" style="background-color: #fef9ef; border-color: #fef9ef;">
+              </div>
+              <hr style="width: 95%;">
+              <br>
+              <div class="container">
+                <br>
+                <h3 style="font-weight: bold;">Edit Profile</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <br>
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="p-firstname" required>
+                  </div>
+                  <div class="col-md-6"> 
+                      <br>
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="p-lastname" required>
+                  </div>
+                </div class="row">
+                  <br>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="p-email" required>
+                  </div>
+                <div class="col-md-6">
+                  <label for="Phone" class="form-label">Phone No.</label>
+                  <input type="text" inputmode="numeric" pattern="[0-9]*" class="form-control" id="p-phone" required>
+                </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-md-6">
+                    <br>
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="p-address" placeholder="1234 Main St" required>
+                </div>
+                <div class="col-md-6">
+                <br>
+                <label>Gender</label>
+                <br>
+                <div class="form-check  form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender2" id="Male2" value="1"  checked> 
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check  form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender2" value="2" id="Female2" >                 
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check  form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender2" value="3" id="Others2" >
+        
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Others
+                    </label>
+                  </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-12">
+                  <br>
+                <button class="btn btn-warning mt-5" type="button" onclick="update()" style="color: white; font-weight: bold;">Submit form</button>
+              </div>
+          </form>             
+              </div>
+              <div class="container">
+                <br>
+               
+   
+            <h1 id="test2"></h1>
+
+         
+          </div>
+        </div>
+        <div class="container">
+          <br>
+          <hr class="mt-5" style="width: 95%;">
+          <h3 style="font-weight: bold;" class="mt-5">Account</h3>
+          <div class="col-12">
+            <p style="font-weight: bold;">Logout of this account</p>
+            <button onclick="logoutMe()" class="btn btn-warning btn_logout"><a href="index.html" style="color: white;">Logout</a></button>
+          </div>
+       
+          <div class="col-12 mt-1">
+            <br>
+            <p style="font-weight: bold;">Deleting your account means everything will be permanently removed </p>
+            <button class="btn btn-danger" onclick="deleteUser()" style="font-weight: bold; "><a href="index.html" style="text-decoration: none;">Delete Account</a></button>
+          </div>
+          
+        </div>
+  
+        <div w3-include-html="footer.html"></div>
+        
+    </body>
+  <script src="js/w3.js"></script>
+  <script>
+          //to bring in other HTML on the fly into this page
+          w3.includeHTML();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/checktoken.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/register.js"></script>
+  <script src="js/redirect.js"></script>
+  <script src="js/loadProfile.js"></script>
+  <script src="js/updateProfile.js"></script>
+
+
+</html>
+

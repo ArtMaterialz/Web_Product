@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+html {
+  scroll-behavior: smooth;
+  
+}
+body::-webkit-scrollbar
+{
+  display: none;
+}
+/* 
+body {
+
+    min-height: 9000px;
+
+} */
+*
+{
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* index.html */
+  .masthead {
+    height: 70rem;
+    min-height: 500px;
+    background-image: url("../images/hobi-industri-8DV-bFgI6sE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: 800;
+    opacity: 0.6;
+    
+    
+  }
+  .masthead h1 {
+    text-shadow: 2px 0px 10px #000000;
+    font-weight: 800;
+    font-size: 62px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: white;
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 18px;
+    text-shadow: 0px 0px 10px #000000;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .navbar-nav > li{
+    padding-right:30px;
+  }
+.fw-light {
+    margin-top: -100px;
+}
+.navbar-brand{
+  padding-left: 30px;
+}
+.text-center{
+
+  color: #FFCB77;
+  font-weight: bold;
+  font-size: 62px;
+}
+.bodyTag {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+
+}
+.HowTo {
+ margin-top: 80px;
+}
+.par1 {
+  font-size: 18px;
+  color: black;
+  margin-top: 100px;
+}
+
+.rateBtn {
+  color: white;
+  border-color: white;
+  padding: 15px 15px;
+  width: 170px;
+  border-radius: 25px;
+  background-color: #FE6D73;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-style: solid;
+  font-size: 18px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border: 3px solid white;
+  
+  cursor: pointer;
+}
+.rateBtn:hover {
+  box-shadow: 0px 0px 5px #000000;
+}
+.rateBtn:focus {
+  outline: white;
+}
+.svgIcon {
+  margin-top: -170px;
+/*  
+  text-shadow: 2px 0px 30px #000000; */
+  text-align: center;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  
+}
+.svgIcon svg:hover path {
+  fill: #FFCB77;
+}
+.navbar-brand svg:hover path {
+  fill: #FFCB77;
+}
+.navbar-nav a:hover {
+  color: #FFCB77;
+}
+::selection {
+  /* Change highlight background color to black */
+  background: #FFCB77;
+  /* Change highlight text color to red */
+  color: #fff;
+}
+
+.AboutUs {
+  margin-top: 100px;
+  
+}
+/* .container .AboutUs {
+  margin-left: 2000px;
+} */
+.AboutUs h1 {
+  color: #FFCB77;
+  font-weight: bold;
+  font-size: 62px;
+}
+.brand_logo svg path{
+  fill: #000000;
+}
+
+.about1 {
+  margin-top: 80px;
+
+}
+.brand_info {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.brand_info h1 {
+  font-weight: bolder;
+  font-size: 32px;
+  color: black;
+}
+.brand_info p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px;
+}
+.OurMission {
+  margin-top: 180px;
+}
+.missionText p{
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.missionText {
+  margin-top: 40px;
+}
+span {
+  color: #FE6D73;
+}
+.Contact {
+  margin-top: 180px;
+}
+.contactUs {
+  text-align: center;
+  margin-top: 70px;
+}
+.contactUs h3{
+  margin-top: 50px;
+  font-weight: bold;
+}
+.containerFoot {
+  text-align: center;
+}
+#footerSpace {
+  margin-top: 250px;
+}
+hr{
+  width: 90%;
+  color: #919191;
+}
+footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+footer h5 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #919191;
+}
+footer a {
+  font-size: 14px;
+  color: #000000;
+ 
+}
+
+footer li {
+  margin-top: 10px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #FFCB77;
+}
+footer svg:hover path {
+  fill: #FFCB77;
+}
+.list-unstyled {
+  margin-top: 20px;
+}
+.copytheright {
+  margin-top: 20px;
+}
+.Testcontainer {
+
+  display: flex;
+  justify-content: center;
+}
+.social_icon {
+  margin-top: 60px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.social_icon svg {
+  cursor: pointer;
+}
+
+.bottom_text {
+  margin-top: 20px;
+}
+
+.searchArea{
+  width: 100%;
+  font-size: 20px;
+  
+}
+
+
+/* restaurant.html */
+.navBar {
+  background-color: #FFCB77;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navBar h1{
+    text-shadow: 2px 0px 10px #000000;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.thumb_image{
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+
+  /* box-shadow: 0px 0px 5px #000000; */
+}
+
+.image2 {
+  width: 462px;
+  height: 255px;
+}
+
+span {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+}
+.term_condition {
+  font-weight: normal;
+  color: #FFCB77;
+}
+.btnReg {
+  font-weight: bold;
+  color: white;
+}
+
+.btn_input {
+  font-size: 30px;
+}
+
+#p-file input{
+  color: #FE6D73;
+}
+
+input[type="text"] {
+
+  border: 2px solid black;
+  
+}
+input[type="email"] {
+
+  border: 2px solid black;
+  
+}
+input[type="password"] {
+
+  border: 2px solid black;
+  
+}
+
+button a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.btn_logout {
+  background-color: #FEF9EF;
+ 
+}
+.thumb_image2 {
+  width: 200px;
+  height: 200px;
+  
+}
+.p-name {
+  text-align: center;
+}
+
+.menu_tag {
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn-explore
+{
+  background-color: transparent;
+  border-radius: 2.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  border: 5px solid white;
+  padding: 5px 5px 5px 5px;
+  color: white;
+  text-shadow: 0px 0px 10px #000000;
+  width: 30%;
+
+
+}
+.btn-explore:hover {
+
+background-color: #FFCB77;
+text-shadow: none;
+}

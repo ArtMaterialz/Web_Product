@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Header Content -->
+    <head>
+        <meta charset="utf-8">
+        <title>Product Page</title>
+        <!-- Link to style sheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="../images/icon.png">
+    </head>
+
+    <body onload="getProductData()" class="bodyTag">
+            <!-- Include top navigation here -->
+            <div w3-include-html="top-navigation.html" class="navBar"></div>
+            <div class="container">
+                <h1 id="rateResult"></h1>
+                <!-- Search bar -->
+                <div class="searchArea row justify-content-center mt-5">
+                    <nav class="">
+                        <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="search"  aria-label="Search" id="search_value">
+                        <button class="btn btn-outline-success my-2 my-sm-0 button_search" type="button" onclick="getSearch_data() " style="border: 2px solid black; font-weight: bold; color: black;">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            
+                <div onload="getProductType()"></div>
+                <div id="filterTable"></div>
+                <div class="row justify-content-center mt-5">
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-warning" onclick="listAll()"style="color: white; font-weight: bold;">All</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button  class="btn btn-warning" onclick="listJapan()"style="color: white; font-weight: bold;">Technology</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button  class="btn btn-warning"onclick="listThai()" style="color: white; font-weight: bold;">Home Essential</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button  class="btn btn-warning" id="fast_food" onclick="listFastFood()" style="color: white; font-weight: bold;">Snacks</button>
+                    </div>  
+                </div>
+
+                <div class="row mt-5" id="parent">
+                    Retrieving products from database... Please wait...<br><br>
+                    If you are seeing this message for a long time, it is likely
+                    that you have a JavaScript error. Troubleshoot your script by
+                    using the browser console panel now. Please use either Firefox
+                    or Chrome to render this webpage.
+                </div>
+                <div id="productTable" class="row"></div>
+            </div>
+            <!-- modal -->
+            <div w3-include-html="login-modal.html"></div>
+            <div w3-include-html="good-modal.html"></div>
+            <div w3-include-html="register-modal.html"></div>
+            <div w3-include-html="footer.html"></div>
+            
+    </body>
+
+ <!-- JS script -->
+ <script src="https://www.w3schools.com/lib/w3.js"></script>
+ <script>
+     //to bring in other HTML on the fly into this page
+     w3.includeHTML();
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+ <script src="https://kit.fontawesome.com/86ec7c1143.js" ></script>
+ <script src="js/app.js"></script>
+ <script src="js/product.js"></script>
+ <script src="js/product_info.js"></script>
+ <script src="js/checktoken.js"></script>
+ <script src="js/login.js"></script>
+ <script src="js/register.js"></script>
+
+
+</html>
+  

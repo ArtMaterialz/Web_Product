@@ -15,8 +15,8 @@ function getProductData() {
 
     product_array = JSON.parse(request.responseText);
 
-    var link = "http://localhost:8080/product.html"
-    const queryString = window.location.href;
+    var link = "/product.html"
+    const queryString = window.location.pathname;
 
     const queryString2 = window.location.search;
     const urlParams = new URLSearchParams(queryString2);
@@ -285,7 +285,7 @@ function pass()
 
 function getURL(name)
 {
-    let url = new URL('http://localhost:8080/product_info.html?');
+    let url = new URL('/product_info.html?');
     let params = new URLSearchParams(url.search);
     
     //Add a second foo parameter.

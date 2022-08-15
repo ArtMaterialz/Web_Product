@@ -274,7 +274,7 @@ function FastFood() {
 
 function pass()
 {
-    const queryString = window.location.search;
+    const queryString = window.location.pathname;
     const urlParams = new URLSearchParams(queryString);
     var pass = urlParams.get("name")
     category = pass; 
@@ -286,7 +286,7 @@ function pass()
 function getURL(name)
 {
     let url = new URL('/product_info.html?');
-    let params = new URLSearchParams(url.search);
+    let params = new URLSearchParams(url.pathname);
     
     //Add a second foo parameter.
     params.append('n', name);

@@ -302,7 +302,7 @@ function getProduct() {
 
         product_array2 = JSON.parse(request.responseText);
     
-        const queryString = window.location.search;
+        const queryString = window.location.pathname;
         const urlParams = new URLSearchParams(queryString);
 
         var pass = urlParams.get("name")

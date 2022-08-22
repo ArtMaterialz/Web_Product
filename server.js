@@ -2,7 +2,7 @@
 
 var express = require("express");
 
-const port = 3000; 
+const port = 80; 
 
 //Accessing the controller page
 var commentController = require('./controllers/commentController');
